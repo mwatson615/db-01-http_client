@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mwatson615/db-01-http_client/issues"
   },
-  "homepage": "https://github.com/mwatson615/db-01-http_client#readme"
+  "homepage": "https://github.com/mwatson615/db-01-http_client#readme",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
