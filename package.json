@@ -1,0 +1,19 @@
+{
+  "name": "01-http_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwatson615/db-01-http_client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwatson615/db-01-http_client/issues"
+  },
+  "homepage": "https://github.com/mwatson615/db-01-http_client#readme"
+}
