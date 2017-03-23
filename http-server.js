@@ -4,6 +4,7 @@ const arg = require('./args.js')();
 
 // const [,, ...args] = require('argv')
 // console.log(args)
+const getData = () => {
 
 get(`http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?parameters=%7B%22Normalized%22%3Afalse%2C%22NumberOfDays%22%3A365%2C%22DataPeriod%22%3A%22Day%22%2C%22Elements%22%3A%5B%7B%22Symbol%22%3A%22${arg}%22%2C%22Type%22%3A%22price%22%2C%22Params%22%3A%5B%22c%22%5D%7D%5D%7D`, (res) => {
 	const statusCode = res.statusCode;
@@ -23,7 +24,8 @@ get(`http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?paramete
 	res.on('end', () => {
 		try {
 			let parsedData = JSON.parse(rawData);
-			console.log(parsedData);
+			// console.log(parsedData);
+			module.exports = parsedData;
 		} catch (e) {
 			console.log(e.message);
 		}
@@ -32,3 +34,4 @@ get(`http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?paramete
 		console.log(`Got error: ${e.message}`)
 	})
 })
+}
